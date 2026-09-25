@@ -1,0 +1,35 @@
+{
+  "name": "Viewing",
+  "type": "object",
+  "properties": {
+    "lead_name": {
+      "type": "string"
+    },
+    "property_title": {
+      "type": "string"
+    },
+    "agent": {
+      "type": "string"
+    },
+    "viewing_date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Scheduled",
+        "Completed",
+        "Cancelled",
+        "No-show"
+      ],
+      "default": "Scheduled"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "lead_name"
+  ]
+}

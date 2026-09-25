@@ -1,0 +1,90 @@
+{
+  "name": "Lead",
+  "type": "object",
+  "properties": {
+    "full_name": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "nationality": {
+      "type": "string"
+    },
+    "interest": {
+      "type": "string",
+      "enum": [
+        "Buy",
+        "Rent",
+        "Invest"
+      ],
+      "default": "Buy"
+    },
+    "property_type": {
+      "type": "string",
+      "enum": [
+        "Apartment",
+        "Villa",
+        "Townhouse",
+        "Penthouse",
+        "Office",
+        "Retail",
+        "Land"
+      ]
+    },
+    "emirate": {
+      "type": "string",
+      "enum": [
+        "Dubai",
+        "Abu Dhabi",
+        "Sharjah",
+        "Ajman",
+        "Ras Al Khaimah",
+        "Fujairah",
+        "Umm Al Quwain"
+      ]
+    },
+    "preferred_area": {
+      "type": "string"
+    },
+    "budget": {
+      "type": "number"
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "Property Finder",
+        "Bayut",
+        "Dubizzle",
+        "Website",
+        "Referral",
+        "Walk-in",
+        "Social Media"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "New",
+        "Contacted",
+        "Viewing",
+        "Negotiation",
+        "Won",
+        "Lost"
+      ],
+      "default": "New"
+    },
+    "assigned_agent": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "full_name"
+  ]
+}

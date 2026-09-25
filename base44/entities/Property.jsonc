@@ -1,0 +1,79 @@
+{
+  "name": "Property",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "reference": {
+      "type": "string"
+    },
+    "listing": {
+      "type": "string",
+      "enum": [
+        "Sale",
+        "Rent"
+      ],
+      "default": "Sale"
+    },
+    "property_type": {
+      "type": "string",
+      "enum": [
+        "Apartment",
+        "Villa",
+        "Townhouse",
+        "Penthouse",
+        "Office",
+        "Retail",
+        "Land"
+      ]
+    },
+    "emirate": {
+      "type": "string",
+      "enum": [
+        "Dubai",
+        "Abu Dhabi",
+        "Sharjah",
+        "Ajman",
+        "Ras Al Khaimah",
+        "Fujairah",
+        "Umm Al Quwain"
+      ]
+    },
+    "community": {
+      "type": "string"
+    },
+    "price": {
+      "type": "number"
+    },
+    "bedrooms": {
+      "type": "number"
+    },
+    "bathrooms": {
+      "type": "number"
+    },
+    "area_sqft": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Available",
+        "Reserved",
+        "Sold",
+        "Rented"
+      ],
+      "default": "Available"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title",
+    "price"
+  ]
+}

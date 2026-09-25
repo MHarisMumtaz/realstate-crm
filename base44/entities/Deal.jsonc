@@ -1,0 +1,46 @@
+{
+  "name": "Deal",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "lead_name": {
+      "type": "string"
+    },
+    "property_title": {
+      "type": "string"
+    },
+    "value": {
+      "type": "number"
+    },
+    "stage": {
+      "type": "string",
+      "enum": [
+        "Inquiry",
+        "Viewing",
+        "Offer",
+        "Negotiation",
+        "Closed Won",
+        "Closed Lost"
+      ],
+      "default": "Inquiry"
+    },
+    "commission_pct": {
+      "type": "number"
+    },
+    "expected_close": {
+      "type": "string",
+      "format": "date"
+    },
+    "agent": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title"
+  ]
+}
